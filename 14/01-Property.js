@@ -72,3 +72,7 @@ let p = Object.defineProperties({}, {
 });
 console.log(`>> p.r`);
 console.log(p.r);
+
+
+console.log(Object.getOwnPropertyNames(p))
+console.log(Object.getOwnPropertySymbols(p))
