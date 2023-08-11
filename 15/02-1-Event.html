@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Event</title>
+    </header>
+    <body>
+        <button onclick="console.log('thank you');">Click</button>
+
+        <button id="mybutton">Click</button>
+        <script>
+            let b = document.querySelector("#mybutton");
+            b.onclick = function() {
+                console.log("thank you - onclick");
+            };
+            b.addEventListener("click", () => {
+                console.log("thank you - addlistener");
+            });
+        </script>
+    </body>
+</html>
